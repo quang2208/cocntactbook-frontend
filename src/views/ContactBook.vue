@@ -20,9 +20,13 @@
                     <i class="fas fa-redo"></i> Làm mới
                 </button>
 
-                <button class="btn btn-sm btn-success" @click="goToAddContact">
+                <router-link
+                    :to="{ name: 'contact.add' }"
+                    class="btn btn-sm btn-success"
+                    @click="goToAddContact"
+                    >
                     <i class="fas fa-plus"></i> Thêm mới
-                </button>
+                </router-link>
 
                 <button
                     class="btn btn-sm btn-danger"
@@ -49,6 +53,7 @@
                         <i class="fas fa-edit"></i> Hiệu chỉnh</span
                     >
                 </router-link>
+                
             </div>
         </div>
     </div>
